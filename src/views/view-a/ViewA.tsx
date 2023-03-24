@@ -8,7 +8,8 @@ function ViewA() {
 
   const handleGetData = async (params: any) => {
     try {
-      await getAll(params);
+
+      await getAll<any>(params);
       // alert success
     } catch (e) {
       // alert error message
